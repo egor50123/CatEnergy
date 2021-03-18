@@ -1,0 +1,29 @@
+.page-header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  @media(max-width:$mobile-max){
+    width: 100%;
+  }
+  @media(min-width:$tablet-min){
+    min-height: 76px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media(min-width:$desktop-min){
+    min-height: 109px;
+  }
+}
+.page-header__background{
+  position: absolute;
+  display: none;
+  @media(min-width:$desktop-min){
+    display: block;
+    right: -110px;
+    z-index: -1;
+  }
+}
+
