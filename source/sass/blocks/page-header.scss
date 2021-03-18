@@ -15,15 +15,12 @@
   }
   @media(min-width:$desktop-min){
     min-height: 109px;
-  }
-}
-.page-header__background{
-  position: absolute;
-  display: none;
-  @media(min-width:$desktop-min){
-    display: block;
-    right: -110px;
-    z-index: -1;
+    &::after{
+      content: url("../img/index-background-desktop@1x.jpg");
+      position: absolute;
+      z-index: -1;
+      right: -110px;
+    }
   }
 }
 

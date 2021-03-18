@@ -9,6 +9,9 @@
   background-image: url(../img/index-background-mobile1x.jpg);
   background-repeat: no-repeat;
   background-size: 320px 305px;
+  @media(min-resolution:2dppx){
+    background-image: url(../img/index-background-mobile@2x.jpg);
+  }
   @media(max-width: $mobile-max){
     width: 320px;
   }
