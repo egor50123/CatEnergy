@@ -8,12 +8,13 @@
   color: white;
   background-image: url(../img/index-background-mobile1x.jpg);
   background-repeat: no-repeat;
-  background-size: 320px 305px;
+  background-size: 100vw 305px;
+  background-position: center top;
   @media(min-resolution:2dppx){
     background-image: url(../img/index-background-mobile@2x.jpg);
   }
   @media(max-width: $mobile-max){
-    width: 320px;
+    width: 100%;
   }
   @media(min-width: $tablet-min){
     align-items: flex-start;
@@ -26,9 +27,7 @@
   @media(min-width: $desktop-min){
     margin-top: 32px;
     padding-left: 88px;
-    height: 776px;
-    background-image: none;
-    color: black;
+    height: 590px;
   }
 }
 
@@ -41,6 +40,7 @@
   margin-bottom: 25px;
   text-align: center;
   @media(min-width: $tablet-min){
+    margin: 0;
     width: 414px;
     margin-bottom: 41px;
     font-size: 60px;
@@ -63,6 +63,7 @@
   @media(min-width: $tablet-min){
   font-size: 20px;
   line-height: 20px;
+  text-transform: uppercase;
   }
   @media(min-width: $desktop-min){
     
@@ -87,7 +88,15 @@
 }
 
 .preview__img{
+  z-index: -1;
   position: absolute;
   margin: auto;
   bottom: 43px; right: 0; left: 0;
+  @media(min-width: $tablet-min){
+    bottom:-10px;
+  }
+  @media(min-width: $desktop-min){
+    bottom:90px;
+    left:230px;
+  }
 }

@@ -6,9 +6,9 @@
   background-color: #EAEAEA;
   margin-top: 42px;
   @media(min-width:$tablet-min){
-    margin-top: 47px;
+    margin-top: 0;
     border-top: 1px solid #E6E6E6; 
-    padding-top:43px;
+    padding-top:47px;
     background-color: white; 
   }
   @media(min-width:$desktop-min){
@@ -222,21 +222,45 @@
   }
 }
 
-.example__wrapper-img{
+.slider{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 320px;
   @media(min-width:$tablet-min){
+    width: 100%;
     height: 462px;
     background-color: #EAEAEA;
-    justify-content: flex-end;
   }
   @media(min-width:$desktop-min){
     margin-top:auto;
     height: auto;
     grid-area:example__wrapper-img;
     width:auto;
+    background-color: inherit;
   }
+}
+
+.slider__img{
+    width: 311px;
+    height: 232px;
+  @media(min-width: $tablet-min){
+    width: 690px;
+    height: 517px;
+    position: absolute;
+    margin:0 auto;
+    right: 0;
+    left: 0;
+    top: -200px;
+  }
+  @media(min-width: $desktop-min){
+    z-index:30;
+    top: -530px;
+    left: -150px;
+  }
+
 }
 
 .example__list-img{
@@ -259,6 +283,7 @@
   width: 228px;
   padding-right:11px;
   padding-left:10px;
+  margin-bottom: 25px;
   text-transform: uppercase; 
   font-size: 16px;
   line-height: 20px;
@@ -266,7 +291,7 @@
   @media(min-width:$tablet-min){
     width: 572px;
     padding: 0; 
-    padding-bottom: 70px;  
+    margin-bottom: 70px;  
   }
   @media(min-width:$desktop-min){} 
 }
