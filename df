@@ -1,0 +1,35 @@
+[33mcommit 6d841418a9c774fafc92b9e72a9ce4167b09316a[m[33m ([m[1;36mHEAD -> [m[1;32mimage[m[33m)[m
+Author: Egor <yatskovskiy2001@gmail.com>
+Date:   Sat Mar 20 02:19:51 2021 +0300
+
+    сделан ползунок для слайдера
+
+[33mcommit a48955cfccfc52dd9651c298ee97d78454627baa[m
+Author: Egor <yatskovskiy2001@gmail.com>
+Date:   Sat Mar 20 01:41:03 2021 +0300
+
+    на index все фоны тянуться,ретина,доработаны некотрые блоки
+
+[33mcommit 861e423dd184fc6a644164c31182d846314924a5[m
+Author: Egor <yatskovskiy2001@gmail.com>
+Date:   Thu Mar 18 18:57:11 2021 +0300
+
+    изображение фона шапки перенесено в псевдоэлемент
+
+[33mcommit 17c6df21aca7b72b2c14c47b4066f9d2a53bb8ab[m[33m ([m[1;32mstart-css[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Egor <yatskovskiy2001@gmail.com>
+Date:   Thu Mar 18 16:13:07 2021 +0300
+
+    сделана вся разметка и декоративные элементы для 2 страниц
+
+[33mcommit 3f8149705c09a1b443821e00ceb43b5da1d6d16b[m
+Author: Egor <yatskovskiy2001@gmail.com>
+Date:   Thu Feb 18 22:53:56 2021 +0300
+
+    2 страницы HTML
+
+[33mcommit 6c901c8509616afe8254d457b812a9c8bccbd5b0[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Egor <yatskovskiy2001@gmail.com>
+Date:   Tue Feb 2 20:50:11 2021 +0300
+
+    Начало истории
