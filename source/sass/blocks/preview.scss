@@ -60,6 +60,7 @@
 .preview__text{
   font-size: 14px;
   line-height: 14px;
+  z-index: 2;
   @media(min-width: $tablet-min){
   font-size: 20px;
   line-height: 20px;
@@ -88,7 +89,7 @@
 }
 
 .preview__img{
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   margin: auto;
   bottom: 43px; right: 0; left: 0;
