@@ -9,6 +9,7 @@
   line-height: 36px;
   font-weight: 400;
   @media(min-width:$tablet-min){
+    max-width: 708px;
     padding: 0;
     border: none;
     text-align: left;
@@ -18,6 +19,7 @@
     line-height: 60px;    
   }
   @media(min-width:$desktop-min){
+    max-width:1220px;
     margin-top: 74px;
     margin-bottom: 84px;
   }
