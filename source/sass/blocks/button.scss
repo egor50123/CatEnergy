@@ -6,4 +6,15 @@
     color: white; 
     border:none;
     text-transform: uppercase;
+    &:hover,
+    &:focus,
+    &:active{
+    	outline: none;
+    	background-color: $basic_green-2;
+    }
+    &:active{
+    	& span{
+    		opacity: 0.3;
+    	}
+    }
 }

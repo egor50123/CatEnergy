@@ -305,7 +305,10 @@
     border: none;
     &::before{
       content:"";
+      cursor: pointer;
       position: absolute;
+
+      display: block;
       width: 34px;
       height: 34px;
       border-radius: 50%;
@@ -316,7 +319,11 @@
       right: 0;
       left: 0;
     }
+    &:active::before{
+      border-color:$basic_green;
+    }
     &::after{
+      cursor: pointer;
       content:"";
       position: absolute;
       width: 8px;

@@ -18,9 +18,18 @@
 }
 
 .header-logo__logo{
+  &:hover,
+  &:focus{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
 }
 
 .header-logo__toggle{
+  cursor: pointer;
+  outline: none;
   display: none;
   @media(max-width:$mobile-max){
   display: block;

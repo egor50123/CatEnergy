@@ -180,6 +180,18 @@
   &--more{
     background-color:$basic_grey;
     color: $special_dark-grey;
+    &:hover,
+    &:focus,
+    &:active{
+      outline: none;
+      background-color: #EBEBEB;
+    }
+    &:active{
+      background-color: $basic_grey-2;
+      span{
+        opacity: 0.3;
+      }
+    }
   } 
 }
 

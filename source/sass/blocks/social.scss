@@ -43,4 +43,12 @@
     width:29px;
     height: 17px; 
   }
+  &:hover,
+  &:focus,
+  &:active{
+    fill:$basic_green;
+  }
+  &:active{
+    opacity: 0.3;
+  }
 }

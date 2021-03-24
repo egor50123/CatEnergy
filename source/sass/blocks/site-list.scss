@@ -30,6 +30,13 @@
   align-items: center;
   min-height: 66px;
   border-top: 1px solid #E6E6E6;
+  &:hover,
+  &:focus{
+    opacity: 0.7;
+  }
+  &:active{
+    opacity: 0.5;
+  }
   @media(min-width: $tablet-min){
     border-top: none;
     min-height: 36px;
@@ -37,6 +44,28 @@
     &--line-color{
       border-bottom: 2px solid $basic_green;
       padding-top: 2px;
+      &:hover,
+      &:focus{
+        border-color: black;
+      }
     }
   }
 }
+
+.site-list--index .site-list__item{
+  @media(min-width: $desktop-min){
+    &:hover,
+    &:focus{
+      opacity: 0.8;
+    }
+   &:active{
+      opacity: 0.6;
+   }
+   &--line-color{
+      &:hover,
+      &:focus{
+        border-color: white;
+      }
+   }
+  }
+} 

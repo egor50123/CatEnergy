@@ -46,6 +46,13 @@
     padding: 0;
     margin:0;
   }
+  &:hover,
+  &:focus{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
 }
 
 .footer__social{
@@ -58,15 +65,10 @@
 }
 
 .footer__copyright{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:22px auto;
   width: 280px;
   height: 34px;
   @media(min-width:$tablet-min){
     height: auto;
     width: 163px;
-    margin:0;
   }  
 }
