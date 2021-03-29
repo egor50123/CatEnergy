@@ -9,7 +9,7 @@
   padding: 0;
   margin-bottom: 38px;
   @media(min-width: $tablet-min){
-    margin-bottom: 72px;
+    margin-bottom: 37px;
     font-size:60px;
     line-height: 60px; 
   }
@@ -72,6 +72,7 @@
   line-height: 18px;
   font-weight: 400;
   margin: 0;
+  margin-top: 3px;
   padding-left: 20px;
   max-width: 220px;
   z-index: 2;
@@ -96,12 +97,12 @@
     z-index: 1;
     display: block;
     bottom: 0;
-    right: 94px;
+    right: 82px;
     font-size: 280px;
     line-height: 280px;
     color: $basic_grey; 
   }
-  @media(min-width: $tablet-min){
+  @media(min-width: $desktop-min){
     right: 0;
   }
 }

@@ -1,8 +1,8 @@
 .location{
   display: flex;
   justify-content: space-between;
+  align-items:center;
   font-weight: 400;
-  padding:22px 0;
   @media(min-width:$tablet-min){
     width: 625px;
     padding-top:62px;
@@ -23,10 +23,15 @@
 }
 
 .location__text{
+  flex:1 1 50%;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  & span{
+    display: flex;
+    padding-top: 5px;
+  }
   @media(min-width:$tablet-min){
     width: 127px;
     font-size: 20px;
@@ -37,11 +42,13 @@
 }
 
 .location__adress{
+  flex:1 1 50%; 
   margin: 0;
   font-size: 14px;
   line-height:20px;
   font-family: Arial;
-  margin-top: -5px;
+  margin-top: 4px;
+  margin-left: 4px;
   color: $special_dark-grey;
   @media(min-width:$tablet-min){
     display: flex;

@@ -2,6 +2,16 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  @media(min-width:$tablet-min){
+    margin-top: 8px;
+  }
+  @media(min-width:$desktop-min){
+  margin-top: 0;
+  }
+}
+
+.footer__location{
+  min-height: 114px;
 }
 
 
@@ -40,7 +50,7 @@
 
 .footer__logo{
   margin:0 auto;
-  padding-top: 39px;
+  padding-top: 42px;
   padding-bottom: 32px;
   @media(min-width:$tablet-min){
     padding: 0;

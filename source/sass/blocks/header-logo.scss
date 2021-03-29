@@ -18,6 +18,12 @@
 }
 
 .header-logo__logo{
+  width: 202px;
+  height: 41px;
+  @media(min-width:$tablet-min){
+    width: 174px;
+    height: 52px;
+  }
   &:hover,
   &:focus{
     opacity: 0.8;

@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin:22px auto;
+  margin:19px auto;
+  font-size: 16px;
+  line-height: 18.4px;
+  font-family: Arial;
   @media(min-width:$tablet-min){
     margin:0;
   }

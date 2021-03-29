@@ -6,7 +6,7 @@
   background-color: #EAEAEA;
   margin-top: 42px;
   @media(min-width:$tablet-min){
-    margin-top: 0;
+    margin-top: 45;
     border-top: 1px solid #E6E6E6; 
     padding-top:47px;
     background-color: white; 
@@ -205,6 +205,7 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
+  margin-top:-12px;
   @media(min-width:$tablet-min){
     display: flex;
     flex-direction: column;
@@ -269,10 +270,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 228px;
-  padding-right:11px;
-  padding-left:10px;
-  margin-bottom: 25px;
+  width: 207px;
+  padding-right: 2px;
+  padding-left: 8px;
+  margin-bottom: 36px;
   text-transform: uppercase; 
   font-size: 16px;
   line-height: 20px;
