@@ -1,10 +1,11 @@
-.site-list{
+.site-list {
   display: flex;
   flex-direction: column;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  @media(min-width: $tablet-min){
+
+  @media (min-width: $tablet-min) {
     font-weight: 400;
     align-items: flex-end;
     flex-direction: row;
@@ -12,73 +13,79 @@
     font-size: 18px;
     line-height: 24px;
   }
-  @media(min-width: $desktop-min){
-    padding-bottom:0;
+
+  @media (min-width: $desktop-min) {
+    padding-bottom: 0;
     font-size: 20px;
     line-height: 29.64px;
-  } 
-}
-
-.site-list a{
-  color:black;
-}
-
-.site-list--index a{
-  @media(min-width: $desktop-min){
-    color:white;
   }
 }
 
-.site-list--index .site-list__item--line-color{
-  @media(min-width: $desktop-min){
+.site-list a {
+  color: black;
+}
+
+.site-list--index a {
+  @media (min-width: $desktop-min) {
+    color: white;
+  }
+}
+
+.site-list--index .site-list__item--line-color {
+  @media (min-width: $desktop-min) {
     border-bottom: 2px solid white;
   }
 }
-.site-list__item{
+
+.site-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 66px;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid $basic_grey-2;
+
   &:hover,
-  &:focus{
+  &:focus {
     opacity: 0.7;
   }
-  &:active{
+
+  &:active {
     opacity: 0.5;
   }
-  @media(min-width: $tablet-min){
+
+  @media (min-width: $tablet-min) {
     border-top: none;
     min-height: 36px;
     padding-bottom: 10px;
-    &--line-color{
+
+    &--line-color {
       border-bottom: 2px solid $basic_green;
       padding-bottom: 8px;
+
       &:hover,
-      &:focus{
+      &:focus {
         border-color: black;
       }
     }
   }
-  @media(min-width: $tablet-min){
-
-  }
 }
 
-.site-list--index .site-list__item{
-  @media(min-width: $desktop-min){
+.site-list--index .site-list__item {
+  @media (min-width: $desktop-min) {
     &:hover,
-    &:focus{
+    &:focus {
       opacity: 0.8;
     }
-   &:active{
+
+    &:active {
       opacity: 0.6;
-   }
-   &--line-color{
+    }
+
+    &--line-color {
       &:hover,
-      &:focus{
+      &:focus {
         border-color: white;
       }
-   }
+    }
   }
-} 
+}
