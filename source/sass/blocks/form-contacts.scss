@@ -1,0 +1,155 @@
+.form-contacts {
+  margin-bottom: 27px;
+  @media (min-width: $tablet-min) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 69px;
+  }
+}
+
+.form-contacts__title {
+  overflow: hidden;
+  display: flex;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  align-items: center;
+  padding-bottom: 5px;
+
+  & span br{
+    @media (min-width: $tablet-min) {
+      display: none;
+    }
+  }
+
+  & span {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      margin-left: 15px;
+        @media (min-width: $tablet-min) {
+          margin-left: 42px;
+      }
+    }
+  }
+
+  &::before,
+  &::after,
+  & span::after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    flex-grow: 1;
+    height: 2px;
+    background-color: $basic_green;
+    top: -7px;
+
+    @media (min-width: $tablet-min) {
+      top: 0;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    &::before {
+      height: 0;
+    }
+  }
+
+  @media (min-width: $tablet-min) {
+    margin-top: 71px;
+    margin-bottom: 76px;
+    padding-bottom: 5px;
+    font-size: 36px;
+    line-height: 36px;
+
+    & span {
+      padding-left: 39.5px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-top: 69px;
+    margin-bottom: 76px;
+
+    & span {
+      padding-left: 0;
+    }
+
+    &::before {
+      right: 36px;
+    }
+  }
+}
+
+.form-contacts__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 14px;
+
+  @media (min-width: $tablet-min) {
+    row-gap: 20px;
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-min) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+    width: 1218px;
+  }
+}
+
+.form-contacts__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-contacts__text {
+  @extend %form-label-text;
+}
+
+.form-contacts__input {
+  min-width: 0;
+  flex-basis: 0;
+  height: 45px;
+  padding: 13.5px 0;
+  padding-left: 15px;
+  flex-grow: 1;
+  margin-left: 10px;
+  @extend %form-label-text;
+  font-family: "Oswald", "Arial", sans-serif;
+  &::placeholder {
+    color: #444444;
+  }
+
+  @media (min-width: $tablet-min) {
+    height: 52px;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-left: 16px;
+  }
+
+  &:focus,
+  &:active {
+    border-color: red;
+  }
+
+  &:focus .form-contacts__svg svg,
+  &:active .form-contacts__svg svg {
+    fill: $basic_green;
+  }
+}
+
+.form-contacts__svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+}

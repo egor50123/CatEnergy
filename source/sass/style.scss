@@ -1,6 +1,7 @@
 @import "vars.scss";
 @import "fonts.scss";
 @import "global.scss";
+@import "extend.scss";
 @import "blocks/page.scss";
 @import "blocks/button.scss";
 @import "blocks/container.scss";
@@ -20,3 +21,9 @@
 @import "blocks/catalog.scss";
 @import "blocks/other-products.scss";
 @import "blocks/gift.scss";
+@import "blocks/header-form.scss";
+@import "blocks/form-contacts.scss";
+@import "blocks/form-comment.scss";
+@import "blocks/form-add.scss";
+@import "blocks/form-purpose.scss";
+@import "blocks/form-title.scss";
