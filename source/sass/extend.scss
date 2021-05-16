@@ -1,0 +1,15 @@
+%form-label-text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  & sup{
+  	position: relative;
+  	top: 2px;
+  }
+
+  @media (min-width: $tablet-min) {
+  font-size: 20px;
+  line-height: 29.64px;
+  }
+}

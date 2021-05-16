@@ -106,6 +106,10 @@
   right: 0;
   left: 0;
 
+  @media (max-width: $mobile-max) {
+    height: 270px;
+  }
+
   @media (min-width: $tablet-min) {
     bottom: -5px;
   }
